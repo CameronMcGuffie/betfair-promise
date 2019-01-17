@@ -1,8 +1,13 @@
 Betfair API-NG for Node.js promisified. 
-Based in https://github.com/AlgoTrader/betfair project.
 ================================================
 
 [![NPM](https://nodei.co/npm/betfair-promise.png?downloads=true)](https://nodei.co/npm/betfair-promise/)
+
+
+
+Based in [AlgoTrader betfair](https://github.com/AlgoTrader/betfair) project.
+
+
 
 ## Installation ##
 
@@ -31,7 +36,7 @@ testLoging();
 ```
 
 
-If you need to set different Betfair endpoints (Spain, Italy ... check here: https://docs.developer.betfair.com/display/1smk3cen4v3lu3yomq5qye0ni/Interactive+Login+-+API+Endpoint#InteractiveLogin-APIEndpoint-OtherJurisdictions), init Betfair session with this options:
+If you need to set different Betfair endpoints (Spain, Italy ... check here: [countries endpoints](https://docs.developer.betfair.com/display/1smk3cen4v3lu3yomq5qye0ni/Interactive+Login+-+API+Endpoint#InteractiveLogin-APIEndpoint-OtherJurisdictions)), init Betfair session with this options:
 
 
 ```JavaScript
