@@ -63,12 +63,13 @@ const session = new betfair.BetfairSession("yourAppKey");
 
 const testListOfCountries = async () => {
     await session.login("yourUsername", "yourPassword");
-    const listOfCountries = await betfair.getListOfCountries();
-    for(let country of listOfCountries) {
-        console.log("country:%s markets:%s", country.counrtyCode, country.marketCount);
+    var listOfCountries = await session.listCountries({filter: {}});
+    for(let country of listOfCountries.result) {
+        console.log("country:%s markets:%s", country.countryCode, country.marketCount);
     }
 };
 
 testListOfCountries();
 ```
 
+A further list of commands, like above, can be found at the Betfair Betting API page - https://docs.developer.betfair.com/display/1smk3cen4v3lu3yomq5qye0ni/Betting+API
